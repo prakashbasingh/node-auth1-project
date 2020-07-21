@@ -17,7 +17,7 @@ exports.up = function(knex) {
             .index();
 
         tbl.string("password", 128)
-            .norNullable()
+            .notNullable()
 
         tbl
           .integer("role")
